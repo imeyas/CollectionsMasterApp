@@ -127,13 +127,15 @@ namespace CollectionsMasterConsoleUI
             SortListEvens(numberList);
 
             //Convert the list to an array and store that into a variable
-
+            Console.WriteLine($"\n New Array Converted From The List:");
             var listToArray = numberList.ToArray();
+            NumberPrinter(listToArray);
 
 
             //Clear the list
 
             numberList.Clear();
+            Console.WriteLine($"\nList cleared...");
 
             #endregion
         }
